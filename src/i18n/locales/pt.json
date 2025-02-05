@@ -1,0 +1,148 @@
+{
+  "app": {
+    "title": "LOMPL - PACKING LIST APP",
+    "nav": {
+      "packingLists": "Packing Lists",
+      "clients": "Clientes"
+    }
+  },
+  "packingList": {
+    "title": "LISTAGEM DE PACKING LIST",
+    "new": "Nova Packing List",
+    "edit": "Editar Packing List",
+    "code": "Código",
+    "createdOn": "Criado em",
+    "boxes": "caixas",
+    "searchPlaceholder": "Pesquisar por código...",
+    "delete": {
+      "confirm": "Tem certeza que deseja eliminar esta packing list?",
+      "yes": "Sim, eliminar",
+      "cancel": "Cancelar"
+    },
+    "form": {
+      "clientInfo": "Informação do Cliente",
+      "searchClients": "Pesquisar Clientes",
+      "addNewClient": "Adicionar Novo Cliente",
+      "saveClient": "Guardar Cliente",
+      "clearForm": "Limpar Formulário",
+      "unsavedChanges": "Existem alterações não guardadas. Deseja sair mesmo assim?"
+    }
+  },
+  "qrcode": {
+    "scan": {
+      "title": "Digitalizar QR Code",
+      "button": "Digitalizar QR",
+      "instructions": "Aponte a câmera para o QR code da packing list"
+    }
+  },
+  "client": {
+    "title": "Informação do Cliente",
+    "new": "Novo Cliente",
+    "edit": "Editar Cliente",
+    "search": "Pesquisar Clientes",
+    "searchPlaceholder": "Pesquisar clientes por nome ou email...",
+    "save": "Guardar Cliente",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefone",
+      "address": {
+        "title": "Morada",
+        "street": "Rua",
+        "postalCode": "Código-Postal",
+        "city": "Cidade",
+        "state": "Distrito / Estado",
+        "country": "País"
+      }
+    },
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "invalidEmail": "Email inválido"
+    }
+  },
+  "box": {
+    "title": "Caixas",
+    "new": "Adicionar Caixa",
+    "edit": "Editar Caixa",
+    "summary": "Resumo da Caixa",
+    "details": "Detalhes da Caixa",
+    "addedBoxes": "Caixas Adicionadas",
+    "sizeDescriptions": "Descrição dos Tamanhos",
+    "model": {
+      "title": "Modelo",
+      "add": "Adicionar Modelo",
+      "remove": "Remover Modelo"
+    },
+    "fields": {
+      "boxNumber": "Caixa",
+      "style": "Modelo",
+      "styleReference": "Referência do Modelo",
+      "description": "Descrição",
+      "color": "Cor",
+      "sizes": "Tamanhos",
+      "quantitiesPerSize": "Quantidade por Tamanho",
+      "total": "Total",
+      "measurements": "Medidas",
+      "tracking": "Tracking",
+      "weight": {
+        "net": "Peso Líquido (kg)",
+        "gross": "Peso Bruto (kg)"
+      },
+      "dimensions": {
+        "length": "Comprimento (cm)",
+        "width": "Largura (cm)",
+        "height": "Altura (cm)"
+      }
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar"
+    }
+  },
+  "shipping": {
+    "title": "Informações de Envio",
+    "carrier": "Transportadora",
+    "customCarrier": "Nome da Transportadora",
+    "tracking": {
+      "title": "Tracking Numbers",
+      "same": "Usar o mesmo tracking number em todas as caixas",
+      "number": "Tracking Number",
+      "placeholder": "Digite o tracking number para a caixa {{number}}"
+    }
+  },
+  "summary": {
+    "totalBoxes": "Total de Caixas",
+    "totalItems": "Total de Itens",
+    "boxDetails": "Detalhes das Caixas"
+  },
+  "common": {
+    "actions": {
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "back": "Voltar à Lista",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "add": "Adicionar",
+      "remove": "Remover",
+      "clear": "Limpar",
+      "search": "Pesquisar",
+      "print": {
+        "a4": "Imprimir A4",
+        "label": "Imprimir Etiquetas"
+      }
+    },
+    "loading": "A carregar...",
+    "error": {
+      "generic": "Ocorreu um erro. Por favor, tente novamente.",
+      "tryAgain": "Tentar Novamente",
+      "required": "Campo obrigatório",
+      "invalidInput": "Valor inválido"
+    },
+    "status": {
+      "saved": "Guardado com sucesso",
+      "saving": "A guardar...",
+      "deleted": "Eliminado com sucesso",
+      "deleting": "A eliminar..."
+    }
+  }
+}

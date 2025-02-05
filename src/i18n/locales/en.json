@@ -1,0 +1,131 @@
+{
+  "app": {
+    "title": "LOMPL - Lomartex Packing List Manager",
+    "nav": {
+      "packingLists": "Packing Lists",
+      "clients": "Clients"
+    }
+  },
+  "packingList": {
+    "title": "Packing Lists",
+    "new": "New Packing List",
+    "edit": "Edit Packing List",
+    "code": "Code",
+    "createdOn": "Created on",
+    "boxes": "boxes",
+    "searchPlaceholder": "Search by code...",
+    "delete": {
+      "confirm": "Are you sure you want to delete this packing list?",
+      "yes": "Yes, delete",
+      "cancel": "Cancel"
+    },
+    "form": {
+      "clientInfo": "Client Information",
+      "searchClients": "Search Clients",
+      "addNewClient": "Add New Client",
+      "saveClient": "Save Client",
+      "clearForm": "Clear Form",
+      "unsavedChanges": "There are unsaved changes. Do you want to leave anyway?"
+    }
+  },
+  "qrcode": {
+    "scan": {
+      "title": "Scan QR Code",
+      "button": "Scan QR",
+      "instructions": "Point the camera at the packing list QR code"
+    }
+  },
+  "client": {
+    "title": "Client Information",
+    "new": "New Client",
+    "edit": "Edit Client",
+    "search": "Search Clients",
+    "searchPlaceholder": "Search clients by name or email...",
+    "save": "Save Client",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": {
+        "title": "Address",
+        "street": "Street",
+        "postalCode": "Postal Code",
+        "city": "City",
+        "state": "State",
+        "country": "Country"
+      }
+    }
+  },
+  "box": {
+    "title": "Boxes",
+    "new": "Add New Box",
+    "edit": "Edit Box",
+    "summary": "Box Summary",
+    "details": "Box Details",
+    "addedBoxes": "Added Boxes",
+    "sizeDescriptions": "Size Descriptions",
+    "model": {
+      "title": "Model",
+      "add": "Add Model",
+      "remove": "Remove Model"
+    },
+    "fields": {
+      "boxNumber": "Box",
+      "style": "Style",
+      "styleReference": "Style Reference",
+      "description": "Description",
+      "color": "Color",
+      "sizes": "Sizes",
+      "quantitiesPerSize": "Quantity per Size",
+      "total": "Total",
+      "measurements": "Measurements",
+      "tracking": "Tracking",
+      "weight": {
+        "net": "Net Weight (kg)",
+        "gross": "Gross Weight (kg)"
+      },
+      "dimensions": {
+        "length": "Length (cm)",
+        "width": "Width (cm)",
+        "height": "Height (cm)"
+      }
+    }
+  },
+  "shipping": {
+    "title": "Shipping Information",
+    "carrier": "Carrier",
+    "customCarrier": "Custom Carrier Name",
+    "tracking": {
+      "title": "Tracking Numbers",
+      "same": "Use same tracking number for all boxes",
+      "number": "Tracking Number",
+      "placeholder": "Enter tracking number for box {{number}}"
+    }
+  },
+  "common": {
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "back": "Back",
+      "edit": "Edit",
+      "delete": "Delete",
+      "print": {
+        "a4": "Print A4",
+        "label": "Print Labels"
+      }
+    },
+    "loading": "Loading...",
+    "error": {
+      "generic": "An error occurred. Please try again.",
+      "tryAgain": "Try Again",
+      "required": "Required field",
+      "invalidInput": "Invalid value"
+    },
+    "status": {
+      "saved": "Saved successfully",
+      "saving": "Saving...",
+      "deleted": "Deleted successfully",
+      "deleting": "Deleting..."
+    }
+  }
+}
