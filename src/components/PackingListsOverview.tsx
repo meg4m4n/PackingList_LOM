@@ -48,7 +48,7 @@ export function PackingListsOverview() {
           ...row,
           code: row.code,
           client: row.client_data,
-          boxes: row.boxes_data,
+          boxes: Array.isArray(row.boxes_data) ? row.boxes_data : [],
           createdAt: new Date(row.created_at),
           updatedAt: new Date(row.updated_at)
         })));
@@ -210,10 +210,10 @@ export function PackingListsOverview() {
                 <div className="mt-2 sm:flex sm:justify-between">
                   <div className="sm:flex">
                     <p className="flex items-center text-sm text-gray-500">
-                      {list.client.name}
+                      {list.client?.name || 'N/A'}
                     </p>
                     <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
-                      {list.boxes.length} {t('packingList.boxes')}
+                      {(list.boxes?.length || 0)} {t('packingList.boxes')}
                     </p>
                   </div>
                   <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">

@@ -61,6 +61,7 @@ export interface PackingList {
   trackingNumbers: string[];
   carrier: Carrier;
   customCarrier?: string;
+  po?: string;
   shippingDocument?: ShippingDocument;
   createdAt: Date;
   updatedAt: Date;

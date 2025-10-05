@@ -6,6 +6,10 @@
       "clients": "Clients"
     }
   },
+  "backup": {
+    "export": "Export Backup",
+    "error": "Error exporting backup. Please try again."
+  },
   "packingList": {
     "title": "Packing Lists",
     "new": "New Packing List",

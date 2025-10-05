@@ -32,6 +32,7 @@ export function PackingListForm() {
   const [showNewClientForm, setShowNewClientForm] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
   const [individualTrackingNumbers, setIndividualTrackingNumbers] = useState<string[]>([]);
+  const [po, setPo] = useState<string>('');
 
   useEffect(() => {
     if (id) {
@@ -84,6 +85,7 @@ export function PackingListForm() {
       setTrackingNumbers(data.tracking_numbers);
       setCarrier(data.carrier as Carrier);
       setCustomCarrier(data.custom_carrier || '');
+      setPo(data.po || '');
       setSameTrackingNumber(data.tracking_numbers?.length === 1);
       setCommonTrackingNumber(data.tracking_numbers?.[0] || '');
       setIndividualTrackingNumbers(data.tracking_numbers || []);
@@ -113,6 +115,7 @@ export function PackingListForm() {
       tracking_numbers: finalTrackingNumbers,
       carrier,
       custom_carrier: carrier === 'Other' ? customCarrier : null,
+      po: po || null,
       updated_at: new Date().toISOString()
     };
 
@@ -230,6 +233,7 @@ export function PackingListForm() {
         : trackingNumbers,
       carrier,
       customCarrier: carrier === 'Other' ? customCarrier : undefined,
+      po: po || undefined,
       createdAt: new Date(),
       updatedAt: new Date()
     } as PackingList;
@@ -498,8 +502,25 @@ export function PackingListForm() {
 
         <div className="bg-white shadow rounded-lg p-6">
           <h2 className="text-lg font-medium text-gray-900 mb-6">{t('shipping.title')}</h2>
-          
+
           <div className="space-y-4">
+            <div>
+              <label htmlFor="po" className="block text-sm font-medium text-gray-700">
+                PO (Purchase Order)
+              </label>
+              <input
+                type="text"
+                id="po"
+                value={po}
+                onChange={(e) => {
+                  setPo(e.target.value);
+                  setHasUnsavedChanges(true);
+                }}
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                placeholder="Enter PO number"
+              />
+            </div>
+
             <div>
               <label htmlFor="carrier" className="block text-sm font-medium text-gray-700">
                 {t('shipping.carrier')}

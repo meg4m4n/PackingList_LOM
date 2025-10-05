@@ -6,6 +6,10 @@
       "clients": "Clientes"
     }
   },
+  "backup": {
+    "export": "Exportar Backup",
+    "error": "Erro ao exportar backup. Por favor, tente novamente."
+  },
   "packingList": {
     "title": "LISTAGEM DE PACKING LIST",
     "new": "Nova Packing List",
